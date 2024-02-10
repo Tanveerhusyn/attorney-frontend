@@ -40,7 +40,7 @@ const CityDetailPage = async ({ params }: CityDetailPageProps
                     </Link>
 
                 </div>
-                <div className="w-full bg-center bg-cover h-[38rem]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1572978122938-4b7b95c292c4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
+                {currentCity && <div className="w-full bg-center bg-cover h-[38rem]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1572978122938-4b7b95c292c4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
                     <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
                         <div className="text-center flex flex-col gap-4">
                             <h1 className="text-3xl font-semibold text-white lg:text-4xl">Welcome to <span className="text-blue-400">{currentCity.city}</span></h1>
@@ -141,7 +141,7 @@ const CityDetailPage = async ({ params }: CityDetailPageProps
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>}
 
 
             </div>
